@@ -1,6 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:id="@+id/">
+    android:id="@+id/mainLayout">
 
-</GridLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Info for this month"
+        android:id="@+id/infoButton"
+        android:layout_row="0"
+        android:layout_column="2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="79dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bottle Feeding"
+        android:id="@+id/bottleButton"
+        android:layout_row="0"
+        android:layout_column="4"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_above="@+id/breastFeedingButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Breast Feeding"
+        android:id="@+id/breastFeedingButton"
+        android:layout_row="2"
+        android:layout_column="2"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/bottleButton"
+        android:layout_alignEnd="@+id/bottleButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diaper Change"
+        android:id="@+id/diaperButton"
+        android:layout_row="2"
+        android:layout_column="4"
+        android:layout_alignTop="@+id/breastFeedingButton"
+        android:layout_toRightOf="@+id/breastFeedingButton"
+        android:layout_toEndOf="@+id/breastFeedingButton"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sleeping"
+        android:id="@+id/sleepButton"
+        android:layout_alignTop="@+id/bottleButton"
+        android:layout_alignLeft="@+id/diaperButton"
+        android:layout_alignStart="@+id/diaperButton"
+        android:layout_alignRight="@+id/diaperButton"
+        android:layout_alignEnd="@+id/diaperButton" />
+
+</RelativeLayout>
