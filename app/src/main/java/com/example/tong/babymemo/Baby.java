@@ -11,16 +11,16 @@ public class Baby {
         return name;
     }
 
+    public static void setName(String name) {
+        Baby.name = name;
+    }
+
     public static String getGender() {
         return gender;
     }
 
     public static void setGender(String gender) {
         Baby.gender = gender;
-    }
-
-    public static void setName(String name) {
-        Baby.name = name;
     }
 
     public static Date getBirthday() {
