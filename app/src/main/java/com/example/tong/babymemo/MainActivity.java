@@ -7,10 +7,12 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
+    Boolean visited = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.welcome);
+        setContentView(R.layout.main_activity);
     }
 
     @Override

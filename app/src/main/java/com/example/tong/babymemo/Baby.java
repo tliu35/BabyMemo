@@ -7,6 +7,12 @@ public class Baby {
     private static String gender;
     private static Date birthday;
 
+    public Baby(String name, String gender, Date birthday){
+        setName(name);
+        setGender(gender);
+        setBirthday(birthday);
+    }
+
     public static String getName() {
         return name;
     }

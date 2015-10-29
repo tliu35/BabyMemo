@@ -90,7 +90,8 @@
             android:text="@string/male"
             android:id="@+id/male_radioButton"
             android:layout_weight="0.18"
-            android:layout_gravity="bottom" />
+            android:layout_gravity="bottom"
+            android:allowUndo="true" />
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -98,7 +99,8 @@
             android:text="@string/female"
             android:id="@+id/female_radioButton"
             android:layout_weight="0.18"
-            android:layout_gravity="bottom" />
+            android:layout_gravity="bottom"
+            android:allowUndo="true" />
 
     </LinearLayout>
 
